@@ -1,4 +1,4 @@
-// 面包板坏了或者电阻太大？
+//！高电平和低电平之前设置delay，不然看不见灯亮
 
 int yellow = 13;
 int green = 12;
@@ -12,12 +12,15 @@ void setup() {
 
 void loop() {
     digitalWrite(yellow, HIGH);
+    delay(2000);
     digitalWrite(yellow, LOW);
-    delay(2000);
+    
     digitalWrite(green, HIGH);
+    delay(2000);
     digitalWrite(green, LOW);
-    delay(2000);
+    
     digitalWrite(red, HIGH);
-    digitalWrite(red, LOW);
     delay(2000);
+    digitalWrite(red, LOW);
+    
 }

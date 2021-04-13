@@ -1,4 +1,5 @@
 //led顺序点亮
+// 寄存器？
 
 int yellow = 13;
 int green = 12;
